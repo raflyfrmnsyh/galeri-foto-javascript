@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan - Membuat Gallery Pagination</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -19,25 +19,19 @@
     <main class="content">
         <div class="container">
             <ul class="box__image">
-                <li class="box__image-list active">
-                    <img src="img/1.jpg" alt="img">
-                </li>
                 <li class="box__image-list">
-                    <img src="img/2.jpg" alt="img">
-                </li>
-                <li class="box__image-list">
-                    <img src="img/3.jpg" alt="img">
+                    <img src="img/1.jpg" class="box__image-img" alt="img">
                 </li>
             </ul>
 
             <div class="indicator__image">
-                <button class="btn btn-prev"></button>
+                <button class="btn btn-prev">Back</button>
                 <div class="indicator__list">
-                    <a href="#" onclick="changePhoto()" class="indicator__link active">1</a>
-                    <a href="#" onclick="changePhoto()" class="indicator__link">2</a>
-                    <a href="#" onclick="changePhoto()" class="indicator__link">3</a>
+                    <a href="#" onclick="changePhoto(1)" class="indicator__link active">1</a>
+                    <a href="#" onclick="changePhoto(2)" class="indicator__link">2</a>
+                    <a href="#" onclick="changePhoto(3)" class="indicator__link">3</a>
                 </div>
-                <button class="btn btn-next"></button>
+                <button class="btn btn-next">Next</button>
             </div>
 
         </div>
@@ -45,7 +39,7 @@
     
 
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

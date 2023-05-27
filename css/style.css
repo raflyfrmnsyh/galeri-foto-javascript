@@ -42,22 +42,18 @@ main{
     justify-content: baseline;
 }
 .box__image .box__image-list{
-    width: 0%;
+    width: 100%;
     height: 240px;
     cursor: pointer;
     transition: all ease .4s;
-}
-.box__image .box__image-list.active{
-    width: 100%;
-    height: 240px;
-    filter: blur(0px);
 }
 
 .box__image .box__image-list img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 24px;
+    border-radius:8px;
+    transition : all ease-in .2s;
 }
 
 .indicator__image{
@@ -71,7 +67,7 @@ main{
     display: flex;
     align-items : center;
 }
-.indicator__image .indicator__list a{
+.indicator__image .indicator__list a, button{
     margin : 0 6px;
     font-weight: 400;
     text-decoration: none;
@@ -79,6 +75,13 @@ main{
     color: #179b68;
     background-color : #38d19620;
 }
+.indicator__image button{
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+}
+
 .indicator__image .indicator__list a.active{
     font-weight: 700;
     padding: 8px 14px;
